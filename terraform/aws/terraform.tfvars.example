@@ -1,0 +1,19 @@
+# AWS Configuration Examples
+# Copy this file to terraform.tfvars and fill in your actual values
+
+# AWS region where resources will be deployed
+region = "us-east-1"
+
+# AMI ID for the EC2 instance (Amazon Linux 2 example)
+# Find AMIs in AWS Console > EC2 > Images > AMI Catalog
+selected_ami = "ami-0c02fb55956c7d316"
+
+# EC2 instance type
+instance_type = "t2.micro"
+
+# Name of your existing EC2 Key Pair for SSH access
+# Create one in AWS Console > EC2 > Key Pairs if you don't have one
+key_name = "your-key-pair-name"
+
+# Name tag for the EC2 instance
+instance_name = "aws-demo-instance"

@@ -1,0 +1,21 @@
+# GCP Configuration Examples  
+# Copy this file to terraform.tfvars and fill in your actual values
+
+# Your GCP project ID
+project_id = "your-gcp-project-id"
+
+# GCP region where resources will be deployed
+region = "us-central1"
+
+# GCP zone within the region
+zone = "us-central1-a"
+
+# VM image to use (Ubuntu 20.04 LTS example)
+# See available images: gcloud compute images list
+selected_image = "ubuntu-os-cloud/ubuntu-2004-lts"
+
+# Machine type for the VM instance
+instance_type = "e2-micro"
+
+# Name for the VM instance
+instance_name = "gcp-demo-instance"

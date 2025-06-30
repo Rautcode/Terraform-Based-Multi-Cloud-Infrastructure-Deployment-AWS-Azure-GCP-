@@ -1,0 +1,95 @@
+# Multi-Cloud Infrastructure Management - Git Ignore Rules
+# =======================================================
+
+# Terraform State Files (NEVER commit these!)
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+terraform.tfplan
+terraform.tfplan.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Environment-specific files
+.env
+.env.local
+.env.*.local
+
+# PowerShell temporary files
+*.tmp
+*.temp
+
+# Backup files
+*_backup.*
+*.bak
+*~
+
+# Log files
+*.log
+logs/
+
+# IDE and Editor files
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Cloud provider credentials and config files
+.aws/
+.azure/
+.config/gcloud/
+credentials.json
+*.pem
+*.p12
+*.key
+
+# Temporary authentication files
+terraform_output.txt
+terraform_error.txt
+terraform_init.txt
+
+# Node modules (if any)
+node_modules/
+
+# Python cache (if any)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Terraform provider cache
+.terraform.d/
+
+# Local testing and development files
+test-results/
+*.test
+dev-*
+
+# Sensitive configuration files
+secrets.yaml
+secrets.yml
+config.local.*
+
+# Exclude terraform.tfvars but keep example files
+terraform.tfvars
+!terraform.tfvars.example
+
+# Keep documentation and examples
+!docs/
+!*.md
+!*.example
+!*.template
